@@ -49,6 +49,26 @@ body {
   }
 }
 
+@media screen and (max-width: 480px){
+  .hero-header {
+  text-align: center;
+  height: 150px;
+  padding-top: 10%;
+  text-transform: uppercase;
+  color: #fff;
+  .main-text {
+    letter-spacing: 6px;
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  .sub-text {
+    font-size: 20px;
+    letter-spacing: 4px;
+    font-weight: lighter;
+  }
+}
+}
+
 .container {
   margin: 20px;
   padding: 20px;
@@ -62,23 +82,36 @@ body {
 }
 
 .para-one {
-  width: 50%;
-  float: left;
+  width: 60%;
+  margin-left: 20%;
 }
 
 .para-two {
-  width: 50%;
-  float: left;
+  width: 60%;
+  margin-left: 20%;
 }
- 
-/*----- Menu -----*/
-  .menu {
-    width:100%;
-    background:#ff5a5f;
-  }
 
+@media screen and (max-width: 480px){
+  .para-one {
+    width: 100%;
+    margin-left: 2%;
+    margin-top: 80px;
+  }
+  .para-two {
+    width: 100%;
+    margin-left: 2%;
+  }
+} 
+/*----- Menu -----*/
+.menu {
+  width:100%;
+  background:#ff5a5f;
+}
+
+@media(min-width: 480px){
 .menu ul {
   display:inline-block;
+  margin-top: 10px;
 }
  
 .menu li {
@@ -135,6 +168,29 @@ body {
   color:#303030;
 }
 
+}
+/* menu end */
+
+
+/*.menu {
+  position: relative;
+  min-height: 40px;
+  background:#ff5a5f;
+}
+*//*
+.menu ul {
+  width: 180px;
+  padding: 5px 0;
+  top: 0;
+  left: 0;
+  border: solid 1px #aaa;
+  background: #fff url(images/icon-menu.png) no-repeat 10px 11px;
+  border-radius: 5px;
+  box-shadow: 0 1px 2px rgba(0,0,0,.3);
+
+} 
+ */
+
 #footer {
   clear: both;
   position: relative;
@@ -145,6 +201,7 @@ body {
   color: white;
   padding: 10px;
   margin: auto;
+
   ul {
     li {
       float: left;
@@ -152,5 +209,30 @@ body {
       list-style: none;
       display: inline;
     }
+  }
+}
+
+.dropdown {
+  display: none;
+}
+
+
+@media(max-width: 480px){
+  .dropdown{
+    display: inline-block;
+    .dropdown-toggle {
+      margin: 0px 50px 0px 0px;
+      padding: 10px 0px 0px 20px;
+      float: left;
+      font-size: 17px;
+      color: black;
+      &:active, &:hover{
+        color: white !important;
+      }
+    }
+  }
+
+  .menu .active {
+    display: none;
   }
 }

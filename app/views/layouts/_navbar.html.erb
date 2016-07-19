@@ -1,8 +1,19 @@
-<nav class="menu">
-  <ul class="active">
-    <li class="current-item"><%= link_to "Home", root_url %></li>
-    <li><%= link_to "Login", "#" %></li>
-    <li><%= link_to "Signup", "#" %></li>
-    <li><%= link_to "About Us", "#" %></li>
-  </ul>
+<nav class='menu'>
+	<ul class="active">
+		<li class="current-item"><%= link_to "Home", root_url %></li>
+		<li><%= link_to "Login", "#" %></li>
+		<li><%= link_to "Signup", "#" %></li>
+		<li><%= link_to "About Us", "#" %></li>
+	</ul>
+
+  <div class="dropdown">
+    <a class="dropdown-toggle" type="button" data-toggle="dropdown">
+    <span class="glyphicon glyphicon-menu-hamburger"></span></a>
+    <ul class="dropdown-menu">
+      <li class="current-item"><%= link_to "Home", root_url %></li>
+      <li><%= link_to "Login", "#" %></li>
+      <li><%= link_to "Signup", "#" %></li>
+      <li><%= link_to "About Us", "#" %></li>
+    </ul>
+  </div>
 </nav>
