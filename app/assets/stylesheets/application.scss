@@ -81,7 +81,10 @@ body {
   color: #fff;
 }
 
-.para-one {
+.col-sm-4 {
+  margin-right: 10px;
+}
+/*.para-one {
   width: 60%;
   margin-left: 20%;
 }
@@ -89,9 +92,9 @@ body {
 .para-two {
   width: 60%;
   margin-left: 20%;
-}
+}*/
 
-@media screen and (max-width: 480px){
+/*@media screen and (max-width: 480px){
   .para-one {
     width: 100%;
     margin-left: 2%;
@@ -101,7 +104,7 @@ body {
     width: 100%;
     margin-left: 2%;
   }
-} 
+} */
 /*----- Menu -----*/
 .menu {
   width:100%;
